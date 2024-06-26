@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>table tag</title>
+    </head>
+    <body>
+        <h1>TABLE IN HTML</h1>
+        <style>
+        table,td {
+            border:2px solid;
+            border-collapse: collapse;
+        } 
+        th{
+            background-color: green;
+
+        }           
+        </style>
+        <table>
+            <caption>I UG MArks</caption>
+         <thead>
+            <tfoot></tfoot>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Course Name</th>
+                <th>Marks</th>
+                <th>EmailId</th>
+            </tr>
+         </thead>
+            <tr>
+                <td>Ben</td>
+                <td>101</td>
+                <td>Data Science</td>
+                <td>83</td>
+                <td>ben@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Lily</td>
+                <td>102</td>
+                <td>DataAnalystics </td>
+                <td>63</td>
+                <td>lily@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Peter</td>
+                <td>103</td>
+                <td>DataAnalystics </td>
+                <td rowspan="2">88</td>
+                <td>peter@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Tony</td>
+                <td>103</td>
+                <td>AI</td>
+                <!--<td>88</td>-->
+                <td>tony@gmail.com</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total Marks</td>
+                
+                <td>488</td>
+            </tr>
+        </table>
+    </body>
+</html>
