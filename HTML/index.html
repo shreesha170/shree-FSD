@@ -4,125 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Information Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            padding: 20px; 
-            margin: 10px; 
-            background-color: #fff;
-            border-radius: 5px;
-            border: 1px solid #ddd; 
-            box-shadow: 2px 2px 5px rgba(7, 199, 132, 0.1); 
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            border: 1px solid #ddd;
-        }
-        table, th, td {
-            border: 1px solid;
-            padding: 8px;
-        }
-        th {
-            background-color: #f2f2f2;
-            text-align: center;
-        }
-        form {
-            margin: 20px 0;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px; 
-            margin: 5px 0 10px 0; 
-            border: 1px solid #ddd; 
-            border-radius: 5px; 
-            box-sizing: border-box; 
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-            margin-top: 10px; 
-            border-top: 1px solid #444;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
-        <h1><b>My Personal Info</b></h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Shreesha</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
+    <section id="showcase">
+        <div class="container">
         <h2>Welcome to My Page</h2>
         <p>Here you can learn more about me and get in touch!</p>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="C:\Users\shree\OneDrive\Pictures\Saved Pictures\mypic.jpg" alt="Profile Picture" width="150">
-        <p>Hello! I'm Shreesha, a student from WCC College. My hobbies include drawing and cooking, and 
-           I have a dream of becoming a full stack developer. I'm passionate about technology and eager to learn 
-           new skills in web development, including HTML, CSS, React.js, and MongoDB. Through my studies and internship at PrepInsta, 
-           I am gaining the experience and knowledge necessary to achieve my career goals.</p>
-        
-        <h3>Education</h3>
-        <table border="1">
-            <tr>
-                <th>Institution</th>
-                <th>Degree</th>
-                <th>Year</th>
-            </tr>
-            <tr>
-                <td>Women's Christian College</td>
-                <td>Master's in Information Technology</td>
-                <td>2025</td>
-            </tr>
-            <tr>               
-                <td>Sri Kanyaka Parameswari Arts And Science College For Women</td>
-                <td>Bachelor's in Computer Science</td>
-                <td>2022</td>
-            </tr>
-        </table>
+    <section id="home" class="container">
+        <h2>Home</h2>
+        <p>Welcome to my personal information page! This is a space where I share details about my professional and personal life. Whether you're here to learn more about my skills, my interests, or how to get in touch with me, you've come to the right place.</p>
+        <p>On this page, you'll find information about my background, my education, and my hobbies. Feel free to explore and reach out if you have any questions or would like to connect!</p>
     </section>
 
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, you can reach me at:</p>
-        <ul>
-            <li>Email:<a href="pshreesha17@gmail.com">pshreesha17@gmail.com</a></li>
-    
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/shreesha2002">LinkedIn Profile</a></li>
-        </ul>
-        <h3>Contact Form</h3>
-        <form action="mailto:yourname@example.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
 
     <footer>
         <p>Copyright &copy; 2024, Shreesha</p>
