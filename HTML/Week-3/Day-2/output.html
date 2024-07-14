@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOC</title>
+</head>
+<body>
+   <h1>Output Methodes in JS<h1>
+    <p id = "demo"></p>
+    <script>
+        // console.log("HELLO")
+        // document.getElementById('demo').innerHTML="<h1>HELLO GUYS</h1>"
+        // document.getElementById('demo').innerText="<h1>HELLO</h1>"
+        // alert('time left is 7s')
+        // confirm('do you want to close')
+    //    prompt('Enter your name')
+    // let a=19
+    // if(a=10){
+    //     document.getElementById('demo').innerHTML="Correct"
+    // }
+    // else{
+    //     document.getElementById('demo').innerHTML="incorrect"
+    // }
+
+    let name=prompt("Enter your name")
+     if(name){
+         document.getElementById('demo').innerHTML='welcome ${name}'
+     }
+     else{
+         document.getElementById('demo').innerHTML="Please enter your avatar name"
+    }
+    </script>
+</body>
+</html>
